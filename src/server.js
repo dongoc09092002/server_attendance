@@ -9,8 +9,7 @@ const adminRouter = require("./routes/admin");
 const attendanceRouter = require("./routes/attendance");
 const client = require("./mqtt");
 app.set("trust proxy", 1);
-//cookies parser
-app.use(cookieParser());
+
 // cors
 app.use(
   cors({
@@ -20,6 +19,8 @@ app.use(
     allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
+//cookies parser
+app.use(cookieParser());
 //body parser
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
