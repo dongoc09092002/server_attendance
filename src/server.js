@@ -9,7 +9,6 @@ const adminRouter = require("./routes/admin");
 const attendanceRouter = require("./routes/attendance");
 const client = require("./mqtt");
 
-
 // cors
 app.use(
   cors({
@@ -26,7 +25,9 @@ app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 //router
-app.get("/",(req,res)=>{return res.json("done")})
+app.get("/", (req, res) => {
+  return res.json("done");
+});
 app.use("/user", userRouter);
 app.use("/admin", adminRouter);
 app.use("/attendance", attendanceRouter);
