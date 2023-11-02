@@ -14,7 +14,7 @@ app.use(cookieParser());
 // cors
 app.use(
   cors({
-    origin: true,
+    origin: "https://client-attendance.vercel.app",
     credentials: true,
     methods: ["GET", "PUT", "POST", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
