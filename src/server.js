@@ -8,6 +8,7 @@ const userRouter = require("./routes/user");
 const adminRouter = require("./routes/admin");
 const attendanceRouter = require("./routes/attendance");
 const client = require("./mqtt");
+app.set("trust proxy", 1);
 //cookies parser
 app.use(cookieParser());
 // cors
