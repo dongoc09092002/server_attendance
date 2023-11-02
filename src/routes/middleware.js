@@ -33,7 +33,11 @@ const middleware = async (req, res, next) => {
       }
     }
   } catch (error) {
-    return res.json(error);
+    return res.json({
+      errCode : -1,
+      message : 'Error server',
+      data : error
+    });
   }
 };
 
