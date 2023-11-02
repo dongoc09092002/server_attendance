@@ -1,0 +1,38 @@
+{
+  "development": {
+    "username": "db_diemdanh_user",
+    "password": "QzpvnsyZ96y96ANnSU58e3XBxUitWeHK",
+    "database": "db_diemdanh",
+    "host": "dpg-cl1hgbbmgg9c738h7bu0-a.singapore-postgres.render.com",
+    "dialect": "postgres",
+    "logging" : false,
+    "dialectOptions" : {
+      "ssl" : {
+      "require" : true,
+      "rejectUnauthorized": false
+    }
+    }
+    
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "db_diemdanh_user",
+    "password": "QzpvnsyZ96y96ANnSU58e3XBxUitWeHK",
+    "database": "db_diemdanh",
+    "host": "dpg-cl1hgbbmgg9c738h7bu0-a.singapore-postgres.render.com",
+    "dialect": "postgres",
+     "logging" : false,
+     "dialectOptions" : {
+      "ssl" : {
+        "require" :true,
+        "rejectUnauthorized" : false
+      }
+    }
+  }
+}
