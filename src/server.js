@@ -13,7 +13,7 @@ app.set("trust proxy", 1);
 // cors
 app.use(
   cors({
-    origin: "https://client-attendance.vercel.app",
+    origin: true,
     credentials: true,
     methods: ["GET", "PUT", "POST", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
