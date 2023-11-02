@@ -2,9 +2,10 @@ const jwt = require("jsonwebtoken");
 const { Admins } = require("../models");
 const middleware = async (req, res, next) => {
   try {
-    const token = req.cookies.token;
+    // const token = req.cookies.token;
+    const token = req.headers.cookie.split("=")[1];
      console.log("this is req", req);
-    console.log("this is cookies", req.cookies);
+    console.log("this is cookies", token);
     if (!token) {
       return res.json({
         errCode: 1,
